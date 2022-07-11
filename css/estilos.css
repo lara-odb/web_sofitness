@@ -1,0 +1,254 @@
+body {
+  font-family: "Trispace", sans-serif; }
+
+section {
+  padding: 10px; }
+
+.navbar {
+  padding: 0 16px; }
+  .navbar .navbar-brand {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 30px;
+    font-weight: 700; }
+    @media (min-width: 992px) {
+      .navbar .navbar-brand {
+        font-size: 50px; } }
+
+.navbar-collapse {
+  justify-content: flex-end; }
+  .navbar-collapse a {
+    color: black !important;
+    font-size: 16px;
+    margin: auto 50px;
+    text-align: center;
+    font-family: "Trispace", sans-serif; }
+    .navbar-collapse a:hover {
+      background-color: black;
+      color: white !important;
+      border-radius: 5px; }
+  .navbar-collapse .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .navbar-collapse .redes .instagram {
+      color: #c13584 !important;
+      margin: 10px 30px; }
+    .navbar-collapse .redes .facebook {
+      color: #0165e1 !important;
+      margin: 10px 30px; }
+    .navbar-collapse .redes .whatsapp {
+      color: #28d146 !important;
+      margin: 10px 30px; }
+    @media (min-width: 992px) {
+      .navbar-collapse .redes {
+        display: none; } }
+
+.carousel .carousel-inner img {
+  height: 200px; }
+  @media (min-width: 767px) {
+    .carousel .carousel-inner img {
+      height: 400px; } }
+  @media (min-width: 992px) {
+    .carousel .carousel-inner img {
+      height: 500px; } }
+  @media (min-width: 1200px) {
+    .carousel .carousel-inner img {
+      height: 600px; } }
+
+.about {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; }
+  @media (min-width: 992px) {
+    .about {
+      flex-direction: row; } }
+  .about h1 {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 30px;
+    display: none; }
+  .about .profile-pic {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin: 20px auto; }
+    @media (min-width: 992px) {
+      .about .profile-pic {
+        width: 400px;
+        height: 400px;
+        margin: auto 100px;
+        border: 2px solid black; } }
+  .about p {
+    font-family: "Trispace", sans-serif;
+    width: 100%;
+    text-align: justify;
+    line-height: 1.5; }
+    @media (min-width: 992px) {
+      .about p {
+        width: 80%;
+        margin: auto; } }
+  .about span {
+    font-weight: bolder; }
+
+h2 {
+  font-family: "Lexend Giga", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 30px;
+  text-align: center;
+  padding: 10px; }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 30px; } }
+
+.planes {
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white; }
+  @media (min-width: 992px) {
+    .planes .div-planes {
+      display: flex;
+      flex-direction: row; } }
+  @media (min-width: 992px) {
+    .planes .div-planes .plan {
+      width: 33%;
+      align-items: center; } }
+  .planes .div-planes .plan img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 12px;
+    opacity: .8; }
+    .planes .div-planes .plan img:hover {
+      opacity: 1;
+      border: 2px solid white; }
+    @media (min-width: 992px) {
+      .planes .div-planes .plan img {
+        width: 300px;
+        height: 300px; } }
+    @media (min-width: 1200px) {
+      .planes .div-planes .plan img {
+        width: 400px;
+        height: 400px; } }
+  .planes .div-planes .plan h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px; }
+    @media (min-width: 992px) {
+      .planes .div-planes .plan h3 {
+        font-size: 18px; } }
+  .planes .div-planes .plan p {
+    font-size: 12px;
+    margin: 20px; }
+    @media (min-width: 992px) {
+      .planes .div-planes .plan p {
+        font-size: 16px;
+        line-height: 1.5; } }
+
+.plan {
+  margin-top: 20px;
+  padding-bottom: 10px; }
+
+.nutricion {
+  text-align: center; }
+  @media (min-width: 992px) {
+    .nutricion {
+      margin-bottom: 40px; } }
+  .nutricion img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid black; }
+  .nutricion p {
+    margin-top: 25px; }
+  @media (min-width: 992px) {
+    .nutricion .alimentacion {
+      display: flex;
+      flex-direction: row-reverse; } }
+  @media (min-width: 992px) {
+    .nutricion .alimentacion img {
+      width: 400px;
+      height: 400px;
+      margin: auto 50px; } }
+
+.div-fondo-blanco {
+  margin: auto 20px; }
+  .div-fondo-blanco p {
+    text-align: justify;
+    line-height: 1.5; }
+  @media (min-width: 992px) {
+    .div-fondo-blanco p {
+      font-size: 18px;
+      line-height: 2; } }
+
+.contacto {
+  background-color: black;
+  color: white; }
+  .contacto h2 {
+    font-size: 20px;
+    padding: 20px; }
+    @media (min-width: 992px) {
+      .contacto h2 {
+        font-size: 30px; } }
+  .contacto .formulario {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contacto .formulario input[type='text'], .contacto .formulario input[type='email'] {
+      width: 100%;
+      height: 40px;
+      margin: 10px;
+      padding: 10px;
+      color: black;
+      border: 1px solid black;
+      border-radius: 3px; }
+      @media (min-width: 992px) {
+        .contacto .formulario input[type='text'], .contacto .formulario input[type='email'] {
+          width: 50%; } }
+    .contacto .formulario label {
+      width: auto; }
+    .contacto .formulario input[type='submit'] {
+      width: 150px;
+      margin: 10px;
+      border: 4px solid black;
+      border-radius: 10px;
+      font-weight: 700;
+      margin-top: 20px; }
+      .contacto .formulario input[type='submit']:hover {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border: 4px solid white; }
+    .contacto .formulario select {
+      height: 30px;
+      font-size: 14px;
+      text-align: center; }
+  .contacto p {
+    text-align: center; }
+
+.footer {
+  background-color: white;
+  height: 50px;
+  text-align: center; }
+  .footer .bi {
+    margin: 15px auto; }
+    @media (min-width: 992px) {
+      .footer .bi {
+        width: 46px;
+        height: 46px; } }
+  .footer a {
+    margin: 20px 20px; }
+  .footer .instagram {
+    color: #c13584; }
+  .footer .facebook {
+    color: #0165e1; }
+  .footer .whatsapp {
+    color: #28d146; }

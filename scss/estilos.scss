@@ -1,4 +1,5 @@
 
+
 $fontPrincipal: 'Trispace', sans-serif;
 $fontTitulos: 'Lexend Giga', sans-serif;
 $colorLogo: #FF0199;
@@ -378,4 +379,382 @@ h2{
 
     
 
+
+
+
+$fontPrincipal: 'Trispace', sans-serif;
+$fontTitulos: 'Lexend Giga', sans-serif;
+$colorLogo: #FF0199;
+$colorInstagram: rgb(193, 53, 132);
+$colorFacebook: rgb(1, 101, 225);
+$colorWhatsapp:  rgb(40, 209, 70);
+
+@mixin tablet {
+    @media (min-width: 767px){
+       @content;
+    }
+   
+}
+
+@mixin desktop {
+   @media (min-width: 992px){
+       @content;
+   }
+}
+
+@mixin xlarge {
+   @media (min-width: 1200px){
+       @content;
+   }
+   
+}
+
+
+
+body{
+    font-family: $fontPrincipal;
+}
+section{
+    padding: 10px;
+}
+.navbar{
+    padding: 0 16px;
+    .navbar-brand{
+        font-family: $fontTitulos;
+        font-size: 30px;
+        font-weight: 700;
+        @include desktop{
+            font-size: 50px;
+        }
+    }
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+    a{
+        color: black !important;
+        font-size: 16px;
+        margin: auto 50px;
+        text-align: center;
+        font-family: $fontPrincipal;
+        &:hover{
+            background-color: black;
+            color: white !important;
+            border-radius: 5px;
+        }
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;        
+        .instagram{
+            color: $colorInstagram !important;
+            margin: 10px 30px;
+        }
+        .facebook{
+            color: $colorFacebook !important;
+            margin: 10px 30px;
+        }
+        .whatsapp{
+            color: $colorWhatsapp !important;
+            margin: 10px 30px;
+        }
+        @include desktop{
+            display: none;
+        }
+    }
+}
+
+.carousel{
+    .carousel-inner{
+        img{
+            height: 200px;
+            @include tablet{
+                height: 400px;
+            }
+            @include desktop{
+                height: 500px;
+            }
+            @include xlarge{
+                height: 600px;
+            }
+        }
+    }
+}
+
+.about{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    @include desktop{
+        flex-direction: row;
+        
+    }
+    h1{
+        font-family: $fontTitulos;
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 30px;
+        display: none;
+        
+    }
+    
+    .profile-pic{
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+        border-radius: 50%;
+        border: 3px solid black;
+        margin: 20px auto;
+        
+        @include desktop{
+            width: 400px;
+            height: 400px;
+            margin: auto 100px;
+            border: 2px solid black;
+        }
+        
+    }
+    
+    p{
+        
+        font-family: $fontPrincipal;
+        width: 100%;
+        text-align: justify;
+        line-height: 1.5;
+        @include desktop{
+            width: 80%;
+            margin: auto;
+        }
+        
+        
+    }
+    span{
+        font-weight: bolder;
+    }
+}
+h2{
+    font-family: $fontTitulos;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    @include desktop{
+        font-size: 30px;
+    }
+    
+
+}
+
+.planes{
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    color: white;
+    .div-planes{
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .plan{
+            @include desktop{
+                width: 33%;
+                align-items: center;
+            }
+            img{
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                border: 1px solid white;
+                padding: 5px;
+                margin: 12px;
+                opacity: .8;
+                &:hover{
+                    opacity: 1;
+                    border: 2px solid white;
+                }
+                @include desktop{
+                    width: 300px;
+                    height: 300px;
+                }
+                @include xlarge{
+                    width: 400px;
+                    height: 400px;
+                }
+            
+            }
+            h3{
+                font-size: 16px;
+                font-weight: bold;
+                margin: 20px;
+                               
+               
+                @include desktop{
+                    font-size: 18px;
+                }
+               
+            }
+            p{
+                font-size: 12px;
+                margin: 20px;
+                @include desktop{
+                    font-size: 16px;
+                    line-height: 1.5;}
+                }
+        }
+       
+    }
+    
+ 
+    
+        
+    }
+       .plan{
+        margin-top: 20px;
+        padding-bottom: 10px;
+        
+    }
+        
+
+
+.nutricion{
+    text-align: center;
+    @include desktop{
+        margin-bottom: 40px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid black;
+        
+    }
+    p{
+        margin-top: 25px;
+    }
+    .alimentacion{
+        @include desktop{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        img{
+            @include desktop{
+                width: 400px;
+                height: 400px;
+                margin: auto 50px;
+            }
+        }
+        
+    }
+    
+}
+.div-fondo-blanco{
+    margin: auto 20px;
+    p{
+        text-align: justify;
+        line-height: 1.5;
+    }
+    @include desktop{
+        p{
+            font-size: 18px;
+            line-height: 2;
+        }
+    }
+}
+
+.contacto{
+    h2{
+        font-size: 20px;
+        padding: 20px; 
+        @include desktop{
+            font-size: 30px;
+        }   
+    }
+    background-color: black;
+    color: white;
+    .formulario{        
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input[type='text'],input[type='email'] {
+            width: 100%;
+            height: 40px;
+            margin: 10px;
+            padding: 10px;
+            color: black;
+            border: 1px solid black;
+            border-radius: 3px;
+            @include desktop{
+                width: 50%;
+                            }
+         }
+        label{
+            width: auto;      
+    }
+        
+        input[type='submit']{
+        width: 150px;
+        margin: 10px;
+        border: 4px solid black;
+        border-radius: 10px;
+        font-weight: 700;
+        margin-top: 20px;
+        &:hover{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border: 4px solid white;
+        }
+    }
+        select{
+            height: 30px;
+            font-size: 14px;
+            text-align: center;
+        }
+       
+
+    }
+    p{
+        text-align: center;
+    }
+    
+
+}
+
+
+.footer{
+    
+        background-color: white;
+        
+        height: 50px;        
+        text-align: center;
+        .bi{
+            margin: 15px auto;
+            @include desktop{
+                width: 46px;
+                height: 46px;
+            }
+        }
+        a{
+            margin: 20px 20px;
+        }
+        .instagram{
+            color: $colorInstagram;
+        }
+        .facebook{
+            color:$colorFacebook;
+        }
+        .whatsapp{
+            color: $colorWhatsapp;
+        }
+    }
+    
+
+
+
+    
 
